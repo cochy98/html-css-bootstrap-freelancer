@@ -1,40 +1,45 @@
+/* I testi dei seguenti selettori avranno un font maiuscolo */
 h1, h2,
 nav{
     text-transform: uppercase;
 }
 
+/* Dove richiamo la seguente classe avrò un margin-bottom */
 .my-mb-2{
     margin-bottom: 2rem;
 }
 
+/* Sfondo full width per header e footer-bottom */
+header.my-bg-dblue,
+footer section#footer-bottom{
+    background-color: #2c3e50;
+}
+
+/* Per le seguenti section avrò uno sfondo full width */
 section#jumbotron,
 section#aboutus{
     background-color: #1abc9c;
 }
 
+/* Per la seguente section avrò uno sfondo full width  e un altezza fissa */
 section#contacts{
     height: 500px;
     background-color: greenyellow;
 }
 
+/* Sfondo full width per footer-top */
 footer section#footer-top{
     background-color: #3a546d;
 }
 
-footer section#footer-bottom{
-    background-color: #2c3e50;
-}
-
-section#cards .card {
+/* Altezza fissa per le varie card e margin top/bottom */
+section#cards .my-card {
     height: 250px;
     margin: 1rem 0;
     background-color: goldenrod;
 }
 
-.my-bg-dblue{
-    background-color: #2c3e50;
-}
-
+/* Grandezza fissa per il box img del jumbotron */
 .my-box-img{
     width: 150px;
     height: 150px;
