@@ -4,16 +4,28 @@ nav{
     text-transform: uppercase;
 }
 
-/* Dove richiamo la seguente classe avrò un margin-bottom */
-.my-mb-2{
-    margin-bottom: 2rem;
+/* Font in grassetto per tutti gli h1, h2 */
+h1, h2 {
+	font-weight: 600;
 }
 
 /* Sfondo full width per header e footer-bottom */
-header.my-bg-dblue,
-footer section#footer-bottom{
+.my-bg-dblue{
     background-color: #2c3e50;
 }
+
+/* INIZIO Formattazione hr star */
+.star>.hr{
+    width: 12%;
+    height: 3px;
+    background-color: black;
+}
+
+.star>span{
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+/* /FINE Formattazione hr star */
 
 /* Per le seguenti section avrò uno sfondo full width */
 section#jumbotron,
@@ -32,16 +44,30 @@ footer section#footer-top{
     background-color: #3a546d;
 }
 
-/* Altezza fissa per le varie card e margin top/bottom */
-section#cards .my-card {
-    height: 250px;
-    margin: 1rem 0;
-    background-color: goldenrod;
+/* Larghezza img del jumbotron a partire dai schermi mobile */
+section#jumbotron img{
+    width: 30%;
 }
 
-/* Grandezza fissa per il box img del jumbotron */
-.my-box-img{
-    width: 150px;
-    height: 150px;
-    background-color: red;
+/* Solo per il jumbotron l'hr è bianco */
+section#jumbotron .star>.hr{
+    background-color: white;
 }
+
+/* Le immagini delle card prendono il 100% della larghezza del container ed hanno i bordi curvi */
+section#cards .my-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ? MEDIA QUERY */
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+    /* Larghezza img del jumbotron a partire dai schermi large */
+    section#jumbotron img{
+        width: 17%;
+    }
+}
+
