@@ -1,5 +1,6 @@
 /* I testi dei seguenti selettori avranno un font maiuscolo */
 h2,
+h5,
 nav,
 section#jumbotron{
     text-transform: uppercase;
@@ -15,6 +16,17 @@ h1, h2 {
     background-color: #2c3e50;
 }
 
+/* Sfondo verde acqua */
+.my-bg-aqua{
+    background-color: #1abc9c;
+}
+
+/* Button aqua */
+.my-btn-aqua{
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
 /* INIZIO Formattazione hr star */
 .star>.hr{
     width: 12%;
@@ -27,17 +39,6 @@ h1, h2 {
     padding: 0 .5rem;
 }
 /* /FINE Formattazione hr star */
-
-/* Per le seguenti section avrò uno sfondo full width */
-section#jumbotron,
-section#aboutus{
-    background-color: #1abc9c;
-}
-
-/* Per la seguente section avrò uno sfondo full width  e un altezza fissa */
-section#contacts{
-    border: 1px solid red;
-}
 
 /* Sfondo full width per footer-top */
 footer section#footer-top{
@@ -61,8 +62,33 @@ section#cards .my-card img{
     border-radius: 10px;
 }
 
+/* Nella section contatti tolgo i bordi agli input del form */
+section#contacts input,
+section#contacts textarea{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+/* La textarea ha un'altezza maggiore */
 section#contacts textarea{
     height: 150px;
+}
+
+/* Cerchio per i link social del footer */
+section#footer-top .fa-brands {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.2rem;
+	border: 1px solid white;
+	border-radius: 50%;
+    margin: 0 .3rem;
+}
+
+section#footer-top .col-12{
+    border: 1px solid red;
 }
 
 /* ? MEDIA QUERY */

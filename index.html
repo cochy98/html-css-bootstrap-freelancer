@@ -49,7 +49,7 @@
 
     <main>
         <!-- Section jumbotron -->
-        <section id="jumbotron" class="p-4 mb-5">
+        <section id="jumbotron" class="my-bg-aqua p-4 mb-5">
             <div class="container">
                 <div class="row text-center text-white">
                     <div class="col-12">
@@ -115,8 +115,8 @@
         <!-- /Section cards -->
 
         <!-- Section aboutus -->
-        <section id="aboutus" class="text-white p-5 mb-5">
-            <div class="container">
+        <section id="aboutus" class="my-bg-aqua text-white">
+            <div class="container p-5">
                 <!-- Row with 4 column -->
                 <div class="row">
                     <div class="col-12">
@@ -148,10 +148,15 @@
 
         <!-- Section contacts -->
         <section id="contacts" class="mb-5">
-            <div class="container">
+            <div class="container p-5">
                 <div class="row">
                     <div class="col-12">
                         <h2 class="text-center">Contact Me</h2>
+                        <div class="star d-flex justify-content-center align-items-center">
+                            <div class="hr"></div>
+                            <span>&#9733;</span>
+                            <div class="hr"></div>
+                        </div>
                     </div>
                     <div class="col-12">
                         <form>
@@ -164,14 +169,14 @@
                                 <input type="email" class="form-control" id="email">
                             </div>
                             <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone">
                             </div>
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Leave a comment here"></textarea>
+                            <div class="mb-3">
                                 <label for="floatingTextarea2">Message</label>
+                                <textarea class="form-control"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <button type="submit" class="btn btn-primary my-btn-aqua">Send</button>
                         </form>
                     </div>
                 </div>
@@ -180,20 +185,28 @@
         <!-- /Section contacts -->
     </main>
 
-    <footer>
+    <footer class="text-white text-center">
         <!-- Section footer-top -->
         <section id="footer-top">
             <div class="container">
                 <!-- Row with 3 column -->
-                <div class="row">
+                <div class="row py-5">
                     <div class="col-12 col-md-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h5>location</h5>
+                        <p>2215 John Daniel Drive Clark, MO 54243</p>
                     </div>
                     <div class="col-12 col-md-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h5>around the web</h5>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </div>
                     <div class="col-12 col-md-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h5>about freelancer</h5>
+                        <p>
+                            Freelance is a free to use, open source Bootstrap theme created by <span>Start Bootstrap</span>.
+                        </p>
                     </div>
                 </div>
                 <!-- /Row with 3 column -->
@@ -206,7 +219,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center">Copyright</p>
+                        <p>Copyright</p>
                     </div>
                 </div>
             </div>
