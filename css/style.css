@@ -1,6 +1,7 @@
 /* I testi dei seguenti selettori avranno un font maiuscolo */
-h1, h2,
-nav{
+h2,
+nav,
+section#jumbotron{
     text-transform: uppercase;
 }
 
@@ -35,8 +36,7 @@ section#aboutus{
 
 /* Per la seguente section avrò uno sfondo full width  e un altezza fissa */
 section#contacts{
-    height: 500px;
-    background-color: greenyellow;
+    border: 1px solid red;
 }
 
 /* Sfondo full width per footer-top */
@@ -49,8 +49,9 @@ section#jumbotron img{
     width: 30%;
 }
 
-/* Solo per il jumbotron l'hr è bianco */
-section#jumbotron .star>.hr{
+/* Solo per la section jumbotron about l'hr è bianco */
+section#jumbotron .star>.hr,
+section#aboutus .star>.hr{
     background-color: white;
 }
 
@@ -58,6 +59,10 @@ section#jumbotron .star>.hr{
 section#cards .my-card img{
     width: 100%;
     border-radius: 10px;
+}
+
+section#contacts textarea{
+    height: 150px;
 }
 
 /* ? MEDIA QUERY */
